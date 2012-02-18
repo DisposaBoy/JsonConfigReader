@@ -18,6 +18,22 @@ var tests = map[string]string{
 		"x": "y"      
 	}`,
 
+	`// serve a directory
+	"l/test": [
+		{
+		"handler": "fs",
+		"dir": "../",
+		// "strip_prefix": "",
+		},
+	],`: `                    
+	"l/test": [
+		{
+		"handler": "fs",
+		"dir": "../" 
+		                      
+		} 
+	],`,
+
 	`[1, 2, 3]`:              `[1, 2, 3]`,
 	`[1, 2, 3, 4,]`:          `[1, 2, 3, 4 ]`,
 	`{"x":1}//[1, 2, 3, 4,]`: `{"x":1}               `,
