@@ -1,4 +1,4 @@
-JsonConfigReader is a proxy for [golang's io.Reader](http://golang.org/pkg/io/#Reader) that strips comments and trailing commas allowing you use json a *reasonable* config format.
+JsonConfigReader is a proxy for [golang's io.Reader](http://golang.org/pkg/io/#Reader) that strips line comments and trailing commas, allowing you to use json as a *reasonable* config format.
 
 Comments start with `//` and continue to the end of the line.
 
