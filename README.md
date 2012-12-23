@@ -5,7 +5,7 @@ Comments start with `//` and continue to the end of the line.
 If a trailing comma is in front of `]` or `}` it will be stripped as well.
 
 
-Given `settings.go`
+Given `settings.json`
 
 	{
 		"key": "value", // k:v
